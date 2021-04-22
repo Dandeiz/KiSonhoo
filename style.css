@@ -1,6 +1,239 @@
-* {
+/* Reset css */
+
+body, h1, h3, p, ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     background-color: #E2E0E0;
-    font-family: Montserrat, monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Menu */
+
+.menuBG {
+    background: #490055;
+    color: white;
+    
+}
+
+.menu {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menuLogo a {
+    font-size: 1.56em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.icone {
+    width: 25.33px;
+    height: 26px;
+}
+
+.nav, .nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.nav img {
+    margin: 7.5px;
+}
+
+/* Background */
+
+.background {
+    background: rgba(55, 0, 65, 0.7);
+}
+
+.background h1, .background p {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.background h1 {
+    font-size: 6.87em;
+    width: 735px;
+    height: 106px;
+}
+
+.background p {
+    font-size: 2.5em;
+    width: 460.29px;
+    height: 90px;   
+}
+
+/* Produtos */
+
+.titulo h1 {
+    font-size: 2.93em; /* 47 */
+    color: #490055;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.produtos h3, .produtos p {
+    color: #4F4E4E;
+}
+
+.produtos h3 {
+    font-size: 2.5em; /* 40 */
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.produtos p {
+    font-size: 1.56em; /* 25 */
+    margin: 30px 0;
+}
+ 
+    /* Rações */
+
+.racoes {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.racoesTxt {
+    color: #4F4E4E;
+    max-width: 490px;
+}
+
+.btn {
+    margin: 12px 0;
+    background-color:#00baf2;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#490055;
+	font-weight:bold;
+	padding:12px 15px;
+	text-decoration:none;
+}
+
+.btn:hover {
+	background-color:#00c8ff;
+}
+.brn:active {
+	position:relative;
+	top:1px;
+}
+
+    /* Brinquedos */
+
+.brinquedos {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brinquedosTxt{
+    order: 2;
+    max-width: 493px;
+    text-align: right;
+}
+
+.brinquedos h3 {
+    margin-top: 60px;
+}
+
+    /* Acessórios */
+
+.acessorios{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+
+.flex {
+    flex-grow: 0;
+}
+
+.flex2 {
+    flex-grow: 1;
+}
+
+.flex3 {
+    flex-grow: 2;
+}
+
+.aceTitle {
+    padding: 60px 10px 30px;
+}
+
+.acessorios ul {
+    font-size: 1.56em; 
+    margin: 30px 0;
+    color: #4F4E4E;
+}
+
+.acessoriosLImg {
+    order: 1;
+    align-self: flex-start;
+}
+
+.acessoriosL {
+    order: 2;
+    align-self: flex-start;
+}
+
+.acessoriosR {
+    order: 3;
+    align-self: flex-end;
+    max-width: 170px;
+}
+
+.acessoriosRImg {
+    order: 4;
+    align-self: flex-end;
 }
 
 

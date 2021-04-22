@@ -10,76 +10,85 @@
 </head>
 <body>
     <header>
-        <div class="menu">
-            <div class="menuL">
-                <h1>KiSonhoo</h1>
-            </div>
-            <div class="menuR">
-                <div class="navTxt">
-                    <a href="#produtos">Produtos</a> 
-                    <a href="#sobre">Sobre</a> 
-                    <a href="#equipe">Equipe</a> 
-                    <a href="#contato">Contato</a> 
-                    </div>
-                <div class="navIcons">
-                    <img class="icone" src="" alt="" class="barrinha">
-                    <img class="icone" src="img/003-whatsapp.svg" alt="contato whatsapp" class="zap">
-                    <img class="icone" src="img/011-instagram.svg" alt="perfil instagram" class="ig">
-                    <img class="icone" src="img/001-facebook.svg" alt="perfil facebook" class="fb">
+        <div class="menuBG">
+            <div class="menu">
+                <div class="menuLogo">
+                    <a href="#">KiSonhoo</a>
                 </div>
+                <div class="menuIcons">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#equipe">Equipe</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                        <img class="barra" src="uploads/barra menu.png" alt="" class="barrinha">
+                        <img class="icone" src="uploads/whatsapp.svg" alt="contato whatsapp" class="zap">
+                        <img class="icone" src="uploads/instagram.svg" alt="perfil instagram" class="ig">
+                        <img class="icone" src="uploads/facebook.svg" alt="perfil facebook" class="fb"> 
+                 </div>
+        </div>
             </div>
         </div>
-        <div>
+        <div class="background">
             <h1>Sua loja pet!</h1>
             <p>Role para baixo para ver o conteúdo</p>
-            <img src="" alt="" class="logo">
-            <img src="" alt="seta para baixo">
+            <img class="logo" src="uploads/Logo.png" alt="logo">
+            <img src="uploads/seta.png" alt="seta para baixo">
         </div>
     </header>
     <main>
+    
     <section id="produtos" class="produtos">
         <div class="titulo">
             <h1>Produtos<span style="color: #00B8F2;">.</span></h1>
         </div>
+        
         <div class="racoes">
-            <h3>Rações</h3>
-            <p>Contamos com enorme variedade de rações para Cães, Gatos, Aves e Roedores. <br> E o melhor de tudo, nós temos <span style="color: #490055;">entrega grátis!</span>*</p>
-            <label for="btn">
-                <input type="button" value="Clique aqui e faça seu pedido!">
-            </label>
-        </div>
-        <div class="racoesImg">
-            <img src="" alt="pilha de rações">
-        </div>
+            <div class="racoesTxt">
+                <h3>Rações</h3>
+                <p>Contamos com enorme variedade de rações para Cães, Gatos, Aves e Roedores. <br> E o melhor de tudo, nós temos <span style="color: #490055;">entrega grátis!</span>*</p>
+                <a href="#" class="btn">Clique aqui e faça seu pedido!</a>
+            </div>
+            <div class="racoesImg">
+                <img src="uploads/rações.png" alt="pilha de rações">
+            </div>
+        </div> 
         <div class="brinquedos">
-            <h3>Brinquedos</h3>
-            <p>Porque brincando é a melhor maneira de gastar energia!</p>
-            <p>Na KiSonhoo você encontra bolas, pelúcias, cordas, mordedores e sempre que você volta, tem uma <span style="color: #490055;">novidade</span>!</p>
+            <div class="brinquedosTxt">
+                <h3>Brinquedos</h3>
+                <p>Porque brincando é a melhor maneira de gastar energia!</p>
+                <p>Na KiSonhoo você encontra bolas, pelúcias, cordas, mordedores e sempre que você volta, tem uma <span style="color: #490055;">novidade</span>!</p>
+            </div>
+            <div class="brinquedosImg">
+                <img src="uploads/brinquedos.png" alt="cesta de brinquedos">
+            </div>
         </div>
-        <div class="brinquedosImg">
-            <img src="" alt="cesta de brinquedos">
-        </div>
-        <div class="acessoriosL">
-            <h3>Acessórios</h3>
-            <ul>
-                <li>Caixas de transporte</li>
-                <li>Cintos de segurança</li>
-            </ul>
-        </div>
-        <div class="acessoriosLImg">
-            <img src="" alt="caixas de transporte">
-        </div>
-        <div class="acessoriosR">
-            <ul>
-                <li>Guias</li>
-                <li>Peitorais</li>
-                <li>Coleiras</li>
-            </ul>
-        </div>
-        <div class="acessoriosRImg">
-            <img src="" alt="guias">
+        <h3 class="aceTitle">Acessórios</h3>
+        <div class="acessorios">
+            <div class="acessoriosL flex3">
+                <ul>
+                    <li>Caixas de<br> transporte</li>
+                    <li>Cintos de<br> segurança</li>
+                </ul>
+            </div>
+            <div class="acessoriosLImg flex">
+                <img src="uploads/cx transporte.png" alt="caixas de transporte">
+            </div>
+            <div class="acessoriosR flex2">
+                <ul>
+                    <li>Guias</li>
+                    <li>Peitorais</li>
+                    <li>Coleiras</li>
+                </ul>
+            </div>
+            <div class="acessoriosRImg flex">
+                <img src="uploads/guias.png" alt="guias">
+            </div>
         </div>
     </section>
+    
     <section id="sobre" class="sobre"> <!-- aqui vem a Div torta -->
         <div class="titulo">
             <h1>Sobre<span style="color: #00B8F2;">.</span></h1>
@@ -89,10 +98,11 @@
             <p>E literalmente somos uma loja em família, que uniu negócios com uma paixão em comum, os pets!</p>
         </div>
         <div class="jack">
-            <img src="" alt="Jack, nosso gato de estimação">
+            <img src="uploads/jack.png" alt="Jack, nosso gato de estimação">
             <p>Esse é o Jack. Está com a gente a mais de 10 anos!</p>
         </div>
     </section>
+    
     <section id="equipe" class="equipe">
         <div class="titulo">
             <h1>Equipe<span style="color: #00B8F2;">.</span></h1>
@@ -102,15 +112,16 @@
             <p>Porém,<span style="color: #490055;">o mais provável</span>é que seja atendido por um dos integrantes da dupla dinâmica de vendas!</p>
         </div>
         <div class="duplaImg">
-            <img src="" alt="venderores">
+            <img src="uploads/vendas.png" alt="venderores">
         </div>
         <div class="familiaImg">
-            <img src="" alt="foto em família">
+            <img src="uploads/familia.png" alt="foto em família">
         </div>
         <div class="conteudoSobre">
             <p class="familia">E essa é a nossa família. Seja bem vindo à <span style="color: #490055;">Agropet KiSonhoo</span>!</p>
         </div>
     </section>
+    
     <section id="contato" class="contato">
         <div class="titulo">
             <h1>Contato<span style="color: #00B8F2;">.</span></h1>
@@ -129,7 +140,7 @@
     </section>
     <footer>
         <!--Colocar dados do criador do site-->
-    </footer>
+    </footer>  
 </main>
 </body>
 </html>
