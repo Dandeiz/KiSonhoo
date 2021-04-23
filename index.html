@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>KiSonhoo</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -32,10 +32,18 @@
             </div>
         </div>
         <div class="background">
-            <h1>Sua loja pet!</h1>
-            <p>Role para baixo para ver o conteúdo</p>
-            <img class="logo" src="uploads/Logo.png" alt="logo">
-            <img src="uploads/seta.png" alt="seta para baixo">
+            
+            <!-- <div class="fundoTexto">
+                <h1>Sua loja pet!</h1>
+                <p>Role para baixo para ver o conteúdo</p>
+            </div> -->
+            <div class="logo">
+                <img src="uploads/Logo.png" alt="logo">
+            </div>
+            <!-- <div class="seta">
+                <img src="uploads/seta.png" alt="seta para baixo">
+            </div> -->
+            <div class="fundo"></div>
         </div>
     </header>
     <main>
@@ -47,9 +55,9 @@
         
         <div class="racoes">
             <div class="racoesTxt">
-                <h3>Rações</h3>
-                <p>Contamos com enorme variedade de rações para Cães, Gatos, Aves e Roedores. <br> E o melhor de tudo, nós temos <span style="color: #490055;">entrega grátis!</span>*</p>
-                <a href="#" class="btn">Clique aqui e faça seu pedido!</a>
+                <div class="racoesH3"><h3>Rações</h3></div>
+                <div class="racoesP"><p>Contamos com enorme variedade de rações para Cães, Gatos, Aves e Roedores. <br> E o melhor de tudo, nós temos<br> <span style="color: #00baf2;">entrega grátis!</span>*</p></div>
+                <div class="botao"><a href="#" class="btn">Clique aqui e faça seu pedido!</a></div>
             </div>
             <div class="racoesImg">
                 <img src="uploads/rações.png" alt="pilha de rações">
@@ -59,7 +67,7 @@
             <div class="brinquedosTxt">
                 <h3>Brinquedos</h3>
                 <p>Porque brincando é a melhor maneira de gastar energia!</p>
-                <p>Na KiSonhoo você encontra bolas, pelúcias, cordas, mordedores e sempre que você volta, tem uma <span style="color: #490055;">novidade</span>!</p>
+                <p>Na KiSonhoo você encontra bolas, pelúcias, cordas, mordedores e sempre que você volta, tem uma <span style="color: #00baf2;">novidade</span>.</p>
             </div>
             <div class="brinquedosImg">
                 <img src="uploads/brinquedos.png" alt="cesta de brinquedos">
@@ -89,17 +97,21 @@
         </div>
     </section>
     
-    <section id="sobre" class="sobre"> <!-- aqui vem a Div torta -->
-        <div class="titulo">
-            <h1>Sobre<span style="color: #00B8F2;">.</span></h1>
-        </div>
-        <div class="conteudoSobre"> 
-            <h3>A KiSonhoo é a nossa <span style="color: #00B8F2;">família</span>.</h3>
-            <p>E literalmente somos uma loja em família, que uniu negócios com uma paixão em comum, os pets!</p>
-        </div>
-        <div class="jack">
-            <img src="uploads/jack.png" alt="Jack, nosso gato de estimação">
-            <p>Esse é o Jack. Está com a gente a mais de 10 anos!</p>
+    <section id="sobre"> <!-- aqui vem a Div torta -->
+        <div class="sobre">
+            <div class="titulo sobreTitle">
+                <h1>Sobre<span style="color: #00B8F2;">.</span></h1>
+            </div>
+            <div class="sobreContent">
+                <div class="sobreTxt"> 
+                    <h3>A KiSonhoo é a nossa <span style="color: #00B8F2;">família</span>.</h3>
+                    <p>E literalmente somos uma loja em família, que uniu negócios com uma paixão em comum, os pets!</p>
+                </div>
+                <div class="jack">
+                    <img src="uploads/jack.png" alt="Jack, nosso gato de estimação">
+                    <p>Esse é o Jack. Está com a gente a mais de 10 anos!</p>
+                </div>
+            </div>
         </div>
     </section>
     
@@ -107,19 +119,23 @@
         <div class="titulo">
             <h1>Equipe<span style="color: #00B8F2;">.</span></h1>
         </div>
-        <div class="conteudoEquipe">
-            <p>Nós somos 4, e você pode dar de cara com qualquer um quando chagar na loja.</p>
-            <p>Porém,<span style="color: #490055;">o mais provável</span>é que seja atendido por um dos integrantes da dupla dinâmica de vendas!</p>
+        <div class="duplaVendas">
+            <div class="duplaVendasTxt">
+                <p class="p1">Nós somos 4, e você pode dar de cara com qualquer um quando chagar na loja.</p>
+                <p class="p2">Porém,<span style="color: #00B8F2;"> o mais provável</span> é que seja atendido por um dos integrantes da dupla dinâmica de vendas!</p>
+            </div>
+            <div class="duplaImg">
+                <img src="uploads/vendas.png" alt="venderores">
+            </div>  
         </div>
-        <div class="duplaImg">
-            <img src="uploads/vendas.png" alt="venderores">
-        </div>
-        <div class="familiaImg">
-            <img src="uploads/familia.png" alt="foto em família">
-        </div>
-        <div class="conteudoSobre">
-            <p class="familia">E essa é a nossa família. Seja bem vindo à <span style="color: #490055;">Agropet KiSonhoo</span>!</p>
-        </div>
+        <div class="familia">
+            <div class="familiaImg">
+                <img src="uploads/familia.png" alt="foto em família">
+            </div>
+            <div class="familiaTxt">
+                <p>E essa é a nossa família. Seja bem vindo à <span style="color: #00B8F2;">Agropet KiSonhoo</span>!</p>
+            </div>
+        </div> 
     </section>
     
     <section id="contato" class="contato">
