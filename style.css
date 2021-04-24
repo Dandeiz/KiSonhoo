@@ -21,6 +21,7 @@ a {
 img {
     display: block;
     max-width: 100%;
+    
 }
 
 * {
@@ -37,10 +38,10 @@ main {
 
 .menuBG {
     background: #490055;
-    color: white;
-    /* max-height: 56px; */
-    /* position: fixed; */
-    
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0px -2px 20px 9px rgba(37,0,43,0.5); 
+    box-shadow: 0px -2px 20px 9px rgba(37,0,43,0.5);
 }
 
 .menu {
@@ -48,8 +49,9 @@ main {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .menu a {
@@ -60,6 +62,10 @@ main {
     font-size: 1.56em;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.menu a:hover{
+    color:#8ee5ff;
 }
 
 .icone {
@@ -84,10 +90,6 @@ main {
 }
 
 /* BACKGROUND */
-/* Para colocar uma div sobreposta a outra, use position absolute e relative */
-/* .background {
-    max-height: 600px;
-} */
 
 .background {
     height: 600px;
@@ -97,6 +99,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;    
@@ -123,10 +126,13 @@ main {
     margin-top: 50px;   
 }
 
+
+
 /* PRODUTOS */
 
 .produtos {
     background-color: #490055;
+    
 }
 
 .titulo h1 {
@@ -151,8 +157,9 @@ main {
     font-size: 1.25em; /* 25 = 1.56 */
     margin: 30px 0;
 }
- 
-    /* RAÇÕES */
+
+
+/* RAÇÕES */
 
 .racoes {
     display: flex;
@@ -160,16 +167,20 @@ main {
     margin: 0 auto;
     padding: 0 10px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.racoesImg  {
+    flex: 1 1 320px;
 }
 
 .racoesTxt {
-    max-width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1 1 300px;
+    line-height: 1.4;
 }
-
 
 .btn {
     background-color:#00baf2;
@@ -191,7 +202,7 @@ main {
 	top:1px;
 }
 
-    /* BRINQUEDOS */
+/* BRINQUEDOS */
 
 .brinquedos {
     display: flex;
@@ -204,11 +215,16 @@ main {
 
 .brinquedosTxt{
     order: 2;
-    max-width: 489px;
+    /* max-width: 489px; */
     text-align: right;
+    flex: 1 1 300px;
 }
 
-.brinquedos h3 {
+.brinquedosImg {
+    flex: 1 1 320px;
+}
+
+.brinquedos h3, .brinquedosImg {
     margin-top: 60px;
 }
 
@@ -216,7 +232,7 @@ main {
     margin-top: 60px;
 }
 
-    /* ACESSÓRIOS */
+/* ACESSÓRIOS */
 
 .acessorios{
     display: flex;
@@ -225,18 +241,6 @@ main {
     margin: 0 auto;
     padding: 0 10px;
     justify-content: space-around;
-}
-
-.flex {
-    flex-grow: 0;
-}
-
-.flex2 {
-    flex-grow: 1;
-}
-
-.flex3 {
-    flex-grow: 2;
 }
 
 .aceTitle {
@@ -273,7 +277,7 @@ main {
     margin-bottom: 60px;
 }
 
-    /* SOBRE */
+/* SOBRE */
 
 .sobreContent {
     display: flex;
@@ -294,13 +298,19 @@ main {
 
 .sobre h3{
     font-size: 2.18em;
-    max-width: 360px;
 }
 
 .sobreTxt p {
-    max-width: 350px;
     margin:90px 0;
     font-size: 1.25em;
+}
+
+.sobreTxt {
+    flex: 1 1 300px;
+}
+
+.jack {
+    flex: 1 1 320px;
 }
 
 .jack p {
@@ -312,7 +322,7 @@ main {
     transform: rotate(3deg);
 }
 
-    /* EQUIPE */
+/* EQUIPE */
 
 .equipe {
     background-color: #490055;
@@ -331,14 +341,11 @@ main {
 .duplaVendasTxt {
     color:  white;
     font-size: 1.25em;
-    max-width: 360px;
+    flex: 1 1 300px;
 }
 
-.duplaImg img {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.duplaImg {
+    flex: 1 1 320px;
 }
 
 .p1 {
@@ -354,13 +361,6 @@ main {
     flex-direction: column;
 }
 
-.familiaImg img {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
-
 .familiaTxt {
     text-align: center;
     color: white;
@@ -368,7 +368,7 @@ main {
     margin: 10px 0 60px;
 }
 
-    /* CONTATO */
+/* CONTATO */
 
 .contato h1{
     text-align: right;
@@ -384,7 +384,7 @@ main {
     max-width: 944px;
     margin: 0 auto;
     padding: 0 10px;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
 
 .dados p, .dados a {
@@ -400,8 +400,8 @@ main {
     color: white;
     font-size: 1.25em;
     flex-wrap: wrap;
-    max-width: 450px;
     text-align: center;
+    flex: 1 1 300px;
 }
 
 .numero {
@@ -409,12 +409,16 @@ main {
     color: white;
 }
 
+.mapa {
+    flex: 1 1 326px;
+}
+
 .mapa p {
     text-align: center;
     color: white;
 }
 
-    /* FOOTER */
+/* FOOTER */
 
 footer {
     background-color: #490055;
@@ -431,8 +435,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 53px;
+    flex-wrap: wrap;
+    flex: 1 1 300px;
 }
 
 .footerDados a {
     color: white;
 }
+
