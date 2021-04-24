@@ -38,7 +38,8 @@ main {
 .menuBG {
     background: #490055;
     color: white;
-    max-height: 56px;
+    /* max-height: 56px; */
+    /* position: fixed; */
     
 }
 
@@ -47,7 +48,7 @@ main {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -84,28 +85,22 @@ main {
 
 /* BACKGROUND */
 /* Para colocar uma div sobreposta a outra, use position absolute e relative */
-.background {
+/* .background {
     max-height: 600px;
-}
-
-.fundo {
-    background: rgba(55, 0, 65, 0.7);
-    height: 600px;
-    max-width: 100%;
-    position: relative;
-    
-}
-
-.logo {
-    /* display: block; */
-    max-width: 40%;
-    max-height: 40%;
-    position: absolute;
-}
-
-/* .fundoTexto {
-    position: absolute;
 } */
+
+.background {
+    height: 600px;
+    max-height: 75vw;
+    background-image: url('uploads/fundo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+}
 
 .background h1, .background p {
     color: white;
@@ -117,12 +112,15 @@ main {
     font-size: 6.87em;
     width: 735px;
     height: 106px;
+    margin-top: 200px;
+    margin-bottom: 30px;
 }
 
 .background p {
-    font-size: 2.5em;
-    width: 460.29px;
-    height: 90px;   
+    font-size: 1.7em;
+    width: 280px;
+    height: 90px;
+    margin-top: 50px;   
 }
 
 /* PRODUTOS */
@@ -336,6 +334,13 @@ main {
     max-width: 360px;
 }
 
+.duplaImg img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 .p1 {
     margin: 90px 0;
 }
@@ -349,6 +354,13 @@ main {
     flex-direction: column;
 }
 
+.familiaImg img {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
 .familiaTxt {
     text-align: center;
     color: white;
@@ -356,3 +368,71 @@ main {
     margin: 10px 0 60px;
 }
 
+    /* CONTATO */
+
+.contato h1{
+    text-align: right;
+}
+
+.contato a {
+    color: white;
+}
+
+.contatoContent {
+    display: flex;
+    justify-content: space-between;
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 10px;
+    flex-flow: row wrap;
+}
+
+.dados p, .dados a {
+    color: white;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.25em;
+    flex-wrap: wrap;
+    max-width: 450px;
+    text-align: center;
+}
+
+.numero {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.mapa p {
+    text-align: center;
+    color: white;
+}
+
+    /* FOOTER */
+
+footer {
+    background-color: #490055;
+    height: 53px;
+    margin-top: 60px;
+}
+
+.footerDados {
+    color: white;
+    max-width: 944px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 53px;
+}
+
+.footerDados a {
+    color: white;
+}
