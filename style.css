@@ -70,19 +70,17 @@ section {
 }
 
 .menu {
-    max-width: 944px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px
+    padding: 10px 0;
 }
 
 .menuLogo {
     font-size: 1.56rem;
-    font-weight: bold;
-    margin: 0 10px;
 }
 
 .icone {
@@ -97,7 +95,7 @@ section {
     font-size: 1.25rem;
 }
 
-.nav a, .nav img {
+.nav a, .barra {
     margin-left: 10px;
 }
 
