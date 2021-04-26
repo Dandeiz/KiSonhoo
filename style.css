@@ -104,6 +104,10 @@ section {
     color:#8ee5ff;
 }
 
+svg:hover path {
+    fill: #8ee5ff;
+} 
+
 
 /* BACKGROUND */
 
