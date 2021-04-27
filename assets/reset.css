@@ -1,0 +1,72 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    text-decoration: none;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white; 
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background-color: #490055;
+}
+
+main h1 {
+    font-size: 2.62rem;
+    padding: 60px 0 60px 0;
+}
+
+main h3 {
+    font-size: 2.18em;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+.flexImg {
+    flex: 1 1 320px;
+}
+
+.txt {
+    flex: 1 1 250px;
+}
+
+main p, main h3 {
+    line-height: 1.4;
+}
+
+.conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 0 10px 30px;
+     
+}
+
+.sobre, .contato {
+    background-color: #804a7c;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
