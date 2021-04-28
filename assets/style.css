@@ -109,6 +109,7 @@ svg:hover path {
 @media screen and (min-height: 710px){
     .nav-links {
         top: 7vh;
+        height: 94vh;
     }
 }
 
