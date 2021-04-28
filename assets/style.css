@@ -110,6 +110,7 @@ svg:hover path {
     .nav-links {
         top: 7vh;
         height: 94vh;
+        padding-bottom: 35px;
     }
 }
 
