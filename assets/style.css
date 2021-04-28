@@ -106,6 +106,12 @@ svg:hover path {
     }
 }
 
+@media screen and (min-height: 710px){
+    .nav-links {
+        top: 7vh;
+    }
+}
+
 .nav-active {
     transform: translate(0%);
 }
