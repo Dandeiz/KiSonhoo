@@ -73,7 +73,7 @@ svg:hover path {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 94vh;
         padding: 0 0 20px;
         top: 8.9vh;
         background-color: #490055;
@@ -109,7 +109,6 @@ svg:hover path {
 @media screen and (min-height: 710px){
     .nav-links {
         top: 7vh;
-        height: 94vh;
         padding-bottom: 35px;
     }
 }
